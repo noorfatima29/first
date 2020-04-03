@@ -1,0 +1,274 @@
+<html>
+    <head>
+           <title> Blood Donor Form </title>
+ 
+         <script language="javascript">
+      function valid()
+    {
+      if(document.donor.fname.value=="")
+      {
+         alert("Please insert First name");
+         document.donor.fname.focus();
+         return false;
+       }
+      if(!document.donor.fname.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("Please insert First name in Alphabate");
+         document.donor.fname.focus();
+         return false;
+       }
+
+
+      if(document.donor.lname.value=="")
+      {
+        alert("Please Insert Last Name");
+        document.donor.lname.focus();
+         return false;
+       }
+      
+      if(!document.donor.lname.value.match(/^[a-zA-Z]+$/))
+      {
+        alert("Please Insert Last Name in Alphabate");
+        document.donor.lname.focus();
+         return false;
+       }
+
+
+
+      if(document.donor.dob.value=="")
+      {
+         alert("please insert Date of Birth");
+         document.donor.dob.focus();
+         return false;
+       }
+        if(document.donor.region.value=="")
+      {
+         alert("please insert Region");
+         document.donor.region.focus();
+         return false;
+       }
+        if(!document.donor.region.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert Region in Alphabate");
+         document.donor.region.focus();
+         return false;
+       }
+        
+
+      
+      
+        if(document.donor.email.value=="")
+      {
+         alert("please insert Email");
+         document.donor.email.focus();
+         return false;
+      }
+      
+       if(document.donor.cnic.value=="")
+      {
+         alert("please insert CNIC");
+         document.donor.cnic.focus();
+         return false;
+       }
+        if(document.donor.cnic.value.length<=5)
+      {
+         alert("please insert CNIC above 5 digit");
+         document.donor.cnic.focus();
+         return false;
+       }
+      if(isNaN(document.donor.cnic.value))
+      {
+         alert("please insert CNIC in Numeric");
+         document.donor.cnic.focus();
+         return false;
+       }
+
+
+      
+       if(document.donor.cell_no.value=="")
+      {
+         alert("please insert Phone Number");
+         document.donor.cell_no.focus();
+         return false;
+       }
+       if(isNaN(document.donor.cell_no.value))
+      {
+         alert("please insert Phone Number in Numeric");
+         document.donor.cell_no.focus();
+         return false;
+       }
+
+
+
+        if(document.donor.oup.value=="")
+      {
+         alert("please insert Occuption");
+         document.donor.oup.focus();
+         return false;
+       }
+       if(!document.donor.oup.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert Occuption in Alphabate");
+         document.donor.oup.focus();
+         return false;
+       }
+
+
+
+
+       if(document.donor.age.value=="")
+      {
+         alert("please insert Age");
+         document.donor.age.focus();
+         return false;
+       }
+         if(isNaN(document.donor.age.value))
+      {
+         alert("please insert Age in Numeric");
+         document.donor.age.focus();
+         return false;
+       }
+
+
+
+     
+       if(document.donor.address.value=="")
+      {
+         alert("please insert Address");
+         document.donor.address.focus();
+         return false;
+       }
+      if(document.donor.city.value=="")
+      {
+         alert("please insert City");
+         document.donor.city.focus();
+         return false;
+       }
+      if(!document.donor.city.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert City in Alphabate");
+         document.donor.city.focus();
+         return false;
+       }
+
+
+        if(document.donor.sign.value=="")
+      {
+         alert("please insert Donor's Signature");
+         document.donor.sign.focus();
+         return false;
+       }
+      if(!document.donor.sign.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert Donor's Signature in Alphabate");
+         document.donor.sign.focus();
+         return false;
+       }  
+      
+         
+        return true;
+   }
+</script>       
+    </head>
+     <body>
+<b>Form No: </b> 123 <readonly>
+<center>
+         <td> <h2> BLOOD DONATION FORM </h2> </td>
+    <h4> Blood Donor Information....... </h4>
+<hr>
+</center>
+<table border="0" align="center" cellpadding="15">
+<form name="donor">
+<tr bgcolor="red">
+   <td>Donor's name:</td>
+   <td><input type= "text" name="fname" placeholder="First Name">
+       <input type= "text" name="lname" placeholder="Last Name"> </td>
+    </tr>
+        <tr>
+           <td>Date of Birth:</td>
+           <td><input type="date" name="dob"></td>
+        </tr>
+            <tr bgcolor="red">
+               <td>Region:</td>
+               <td><input type= "text" name="region"></td>
+            </tr>          
+    <tr>
+       <td>Email: </td>
+       <td><input type= "text" name="email" placeholder=" Enter Email"> </td>
+    </tr>
+       <tr bgcolor="red">
+     <td>CNIC: </td> 
+     <td> <input type= "text" name="cnic" placeholder="CNIC Number"></td>
+          </tr>
+   <tr>
+     <td>Phone# </td>
+	 <td> <select name="cell_no">
+	 <option>+92</option>
+	 <option>+61 </option>
+	 <option>+042</option>
+	 <option>+98 </option>
+	 </select> 
+      <input type= "text" name="cell_no" placeholder="Phone Number"></td>
+  </tr>
+      <tr bgcolor="red">
+       <td> Occupation: </td>
+      <td><input type= "text" name="oup"></td>
+   </tr>
+       <tr>
+         <td>Age: </td>
+        <td> <input type="text" name="age"></td>
+    </tr>
+     <tr bgcolor="red"> 
+        <td>Gender:</td>
+           <td><input type="radio" name="gender" value="Male">Male 
+               <input type="radio" name="gender" value="Female">Female</td>
+     </tr>
+         <tr>
+             <td><i> Did you ever donate blood before? </i></td>
+             <td><input type="radio" name="q" value="Yes">Yes
+                 <input type="radio" name="q" value="No">No </td>	
+        </tr>
+     <tr bgcolor="red">
+         <td>Blood Type:</td>
+        <td><select name="type">
+      <option>Select your blood group</option>
+       <option>O+</option>
+       <option>O-</option>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option> 
+      <option>B-</option>
+      <option>AB+</option>
+      <option>AB-</option>
+           </select></td>
+   </tr>
+      <tr>		
+          <td>Address: </td>
+          <td><textarea name="address" cols="30" rows="1"></textarea> </td>
+ </tr>
+   <tr bgcolor="red">
+   <td>City: </td>
+    <td><input type= "text" name="city"> </td>
+   </tr>
+          <tr>
+       <td>Country:</td>
+      <td><select name="cnt">
+            <option></otion>
+            <option>Pakistan</otion>
+            <option>America</otion>
+            <option>China</otion>
+            <option>London</otion>
+             </select></td>
+     </tr>
+   <tr bgcolor="red">
+          <td>Donor's Signature:</td>
+        <td><textarea name="sign" cols="30" rows="2"> </textarea></td>
+  </tr>
+     <tr>
+           <td><input type="submit" name="btnsub" value="Submit for Blood Donation" onclick="return valid();">
+           <td> <input type="reset" name="btnres" value="Reset"></td>
+    </tr>
+</form>
+</table>
+   </body>
+</html>

@@ -1,0 +1,255 @@
+<html>
+    <head>
+           <title> Registration Form </title>
+              <script language="javascript">
+    function valid()
+    {
+      if(document.Reg.name.value=="")
+      {
+         alert("please insert First name");
+         document.Reg.name.focus();
+         return false;
+      }
+       if(!document.Reg.name.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert First name in Alphabate");
+         document.Reg.name.focus();
+         return false;
+      }
+      
+
+ 
+     if(document.Reg.lname.value=="")
+      {
+         alert("please insert Last name");
+         document.Reg.lname.focus();
+         return false;
+      }
+      if(!document.Reg.lname.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert Last name in Alphabate");
+         document.Reg.lname.focus();
+         return false;
+      }
+
+
+
+         if(document.Reg.dob.value=="")
+      {
+         alert("please insert Date of Birth");
+         document.Reg.dob.focus();
+         return false;
+      }
+            if(document.Reg.region.value=="")
+      {
+         alert("please insert Region");
+          document.Reg.region.focus();
+         return false;
+      }
+           if(!document.Reg.region.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert Region");
+          document.Reg.region.focus();
+         return false;
+      }
+       
+
+
+
+      if(document.Reg.email.value=="")
+      {
+         alert("please insert Email");
+          document.Reg.email.focus();
+         return false;
+      }
+         if(document.Reg.pword.value=="")
+      {
+         alert("please insert Password");
+          document.Reg.pword.focus();
+         return false;
+      }
+              if(document.Reg.cnic.value=="")
+      {
+         alert("please insert CINC");
+          document.Reg.cnic,focus();
+         return false;
+      }
+       if(document.Reg.cnic.value.length<=5)
+      {
+         alert("please insert CINC above 5 digit");
+         document.Reg.cnic.focus();
+         return false;
+      }
+        if(isNaN(document.Reg.cnic.value))
+      {
+         alert("please insert CINC in Numeric");
+         document.Reg.cnic.focus();
+         return false;
+      }
+
+
+             if(document.Reg.cell_no.value=="")
+      {
+         alert("please insert Phone Number");
+           document.Reg.cell_no.focus();
+         return false;
+      }
+              if(isNaN(document.Reg.cell_no.value))
+      {
+         alert("please insert Phone Number in Numeric");
+           document.Reg.cell_no.focus();
+         return false;
+      }
+
+
+
+            if(document.Reg.age.value=="")
+      {
+         alert("please insert Age");
+          document.Reg.age.focus();
+         return false;
+      }
+          if(isNaN(document.Reg.age.value))
+      {
+         alert("please insert Age in Numeric");
+          document.Reg.age.focus();
+         return false;
+      }
+
+
+
+
+           if(document.Reg.address.value=="")
+      {
+         alert("please insert Address");
+          document.Reg.address.focus();
+         return false;
+      }
+             if(document.Reg.city.value=="")
+      {
+         alert("please insert City");
+          document.Reg.city.focus();
+         return false;
+      }
+          if(!document.Reg.city.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert City in Alphabate");
+         document.Reg.city.focus();
+         return false;
+      }
+
+
+
+            if(document.Reg.sign.value=="")
+      {
+         alert("please insert Signature");
+          document.Reg.sign.focus();
+         return false;
+      }
+            if(!document.Reg.sign.value.match(/^[a-zA-Z]+$/))
+      {
+         alert("please insert Signature in Alphabate");
+         document.Reg.sign.focus();
+         return false;
+      }
+
+       return true;
+    }
+    </script>
+
+    </head>
+     <body>
+<b>Form No: </b> 145 <readonly><br>
+<center>
+      <td><h2> REGISTRATION FORM </h2></td>
+<hr>
+</center>
+<table border="0" align="center" cellpadding="15">
+<form name="Reg">
+<tr bgcolor="silver">
+   <td>Name:</td>
+   <td><input type= "text" name="name" placeholder="First Name">
+    <input type= "text" name="lname" placeholder="Last Name"></td>
+    </tr>
+        <tr>
+           <td>Date of Birth:</td>
+           <td><input type="date" name="dob"></td>
+        </tr>
+            <tr bgcolor="silver">
+               <td>Region:</td>
+               <td><input type= "text" name="region"></td>
+            </tr>          
+    <tr>
+       <td>Email: </td>
+       <td><input type= "text" name="email" placeholder=" Enter Email"> </td>
+    </tr>
+    <tr bgcolor="silver">
+        <td> Password: </td>
+        <td> <input type="password" name="pword" placeholder="Enter Password"></td>
+    </tr>
+       <tr>
+     <td>CNIC: </td> 
+     <td> <input type= "text" name="cnic" placeholder="CNIC Number"></td>
+          </tr>
+   <tr bgcolor="silver">
+     <td>Phone# </td>
+     <td> <input type= "text" name="cell_no" placeholder="Phone Number"></td>
+  </tr>
+      <tr>
+       <td> Degree: </td>
+      <td><input type="checkbox" name="deg" value="Matric">Matric 
+               <input type="checkbox" name="deg" value="FSC">FSC
+               <input type="checkbox" name="deg" value="Bechelor">Bechelor
+               <input type="checkbox" name="deg" value="Master">Master
+              <input type="checkbox" name="deg" value="Mphil">Mphil <td>
+
+   </tr>
+       <tr bgcolor="silver">
+         <td>Age: </td>
+        <td> <input type="text" name="age"></td>
+    </tr>
+     <tr> 
+        <td>Gender:</td>
+           <td><input type="radio" name="gender" value="Male">Male 
+               <input type="radio" name="gender" value="Female">Female</td>
+     </tr>
+       <tr bgcolor="silver">
+         <td>Program:</td>
+        <td><select name="type">
+      <option>Select Program</option>
+       <option>Web Development</option>
+       <option>Web Designing</option>
+      <option>Spoken English</option>
+      <option>Basic Computer</option>
+           </select></td>
+   </tr>
+      <tr>		
+          <td>Address: </td>
+          <td><textarea name="address" cols="30" rows="1"></textarea> </td>
+ </tr>
+   <tr bgcolor="silver">
+   <td>City: </td>
+    <td><input type= "text" name="city"> </td>
+   </tr>
+          <tr>
+       <td>Country:</td>
+      <td><select name="cnt">
+            <option>-----</otion>
+            <option>Pakistan</otion>
+            <option>Amerbica</otion>
+            <option>China</otion>
+            <option>London</otion>
+             </select></td>
+     </tr>
+   <tr bgcolor="silver">
+          <td>Student Signature:</td>
+        <td><textarea name="sign" cols="30" rows="2"></textarea></td>
+  </tr>
+<tr>
+           <td><input type="submit" name="btnsub" value="Submit for Registration" onclick="return valid();"> </td>
+            <td><input type="reset" name="btnres" value="Reset"> </td>
+</tr>
+</form>
+</table>
+   </body>
+</html>
